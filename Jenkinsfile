@@ -28,7 +28,7 @@ pipeline {
              
             steps {
                  
-           sh "ansible-playbook jenkins.yml -i myinventory -- user ansible --key-file ~/.ssh/id_rsa"
+           sh "ansible-playbook jenkins.yml --extra-vars "JobName=ansible_demo2"
 }
 }
 }
