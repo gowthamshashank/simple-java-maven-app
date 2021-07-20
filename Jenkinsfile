@@ -28,7 +28,7 @@ pipeline {
              
             steps {
                  
-           sh "ansible-playbook jenkins.yml --extra-vars "JobName=ansible_demo2"
+           sh "ansible-playbook jenkins.yml"
 }
 }
 }
